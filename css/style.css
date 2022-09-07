@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* ------- mobile ------- */
 /* BODY */
 body {
   font-family: "Roboto", sans-serif;
@@ -132,6 +132,54 @@ a {
   display: none;
 }
 
+/*    CLIENT SECTION    */
+.clientSection {
+  padding: 0 30px;
+  margin-top: 50px;
+}
+
+.clientLogo {
+  filter: grayscale(1);
+  margin: 10px 0;
+}
+
+.logosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logosContainer img {
+  width: 90px;
+  height: auto;
+  margin: 5px;
+}
+
+/* CLIENT SECTION */
+/*      PROJECT SECTION        */
+
+/* .fieldset {
+  border: none;
+  text-align: center;
+}
+
+.fieldset img {
+  width: 100px;
+  height: auto;
+}
+
+.projectsSecton {
+  display: block;
+}
+
+.projectsSecton-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+} */
+
+
+/* PROJECT SECTION */
+
 /*---------------------*/
 /* --- media query --- */
 /*---------------------*/
@@ -192,7 +240,7 @@ main {/*    listo   @ */
 }
 
 /*    HERO SECTION  @  */
-.heroSection { /*    listo   @ */ 
+.heroSection, .heroSection { /*    listo   @ */ 
   padding: 60px 200px 0 200px;
 }
 .heroContainer { /*    listo   @ */ 
@@ -215,7 +263,7 @@ main {/*    listo   @ */
   width: auto;
   font-size: 1.25em;
   text-align: left;
-  padding-right: 35px;
+  padding-right: 50px;
 }
 .meetUs { /*    listo   @ */ 
   flex-direction: row;
@@ -227,7 +275,7 @@ main {/*    listo   @ */
   width: 400px;
 }
 h1 { /*pendiente  OJO */
-  font-size: ;
+  font-size:
 }
 .card1 { /*    listo   @ */ 
   top: 210px;
@@ -238,16 +286,96 @@ h1 { /*pendiente  OJO */
   right: 430px;
 }
 
-.card2 {
-  width: 300px;
+.card2 { /*    listo   @ */ 
+  top: 540px;
+  display: block;
+  width: 205px;
   height: auto;
   position: absolute;
   bottom: -100px;
-  left: 200px;
+  right: 180px;
+}
+
+.getInTouchButton { /*    listo   @ */ 
+  margin-right: 50px; 
+  display: block;
+  transition: 0.5s;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+
+.seeOurWorkButton { /*    listo   @ */ 
+  margin-bottom: 16px;
+}
+
+.clientSection { /*    listo   @ */ 
+  padding: 60px 200px 100px 200px;
+}
+
+.logosContainer img { /*    listo   @ */ 
+  width: 100px;
+  height: auto;
+  margin: 0 30px 0 30px;
+}
+
+/*      PROJECT SECTION    @ ini */
+
+.projectsSecton {
+  padding: 60px 200px 0 200px;
+
+}
+
+.boxContainer {
+  width: 100%;
+  height: auto;
+  padding: 0 30px;
+  margin-top: 100px 0 100px 0;
+}
+
+.recentProjects {
+  padding: 50px;
+}
+
+.textH2 {
+
+}
+
+.articlesContainer {
+  display: grid;
+  gap: 10px;
+  margin: 20px 180px;
+  grid-template-areas: '. . .';
+}
+
+.articleDetails{
+  text-align: center;
+}
+
+.imgSize {
+  width: 250px;
+  height: 200px;
+}
+
+.textH3 {
+  color: #4a5551;
+  font-size: x-large;
+  font-family: 'Roboto', sans-serif;
+}
+
+.textSize {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+}
+
+.learnMore {
+
 }
 
 
+/*      PROJECT SECTION    @ end */
+
 }
+
 
 
 
