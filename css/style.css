@@ -61,6 +61,17 @@ a {
   display: none;
 }
 
+.comingSoonImg {
+  margin-top: 100px;
+  width: 150px;
+  height: auto;
+}
+
+.comingSoon {
+  margin: auto;
+  text-align: center;
+}
+
 /*    HERO SECTION  -- mobile --  */
 .heroSection {
   padding: 0 30px;
@@ -166,9 +177,44 @@ a {
 /* CLIENT SECTION      -- mobile --*/
 /*      PROJECT SECTION    -- mobile --    */
 
+.articleDetailsProjects{
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleDetailsProjects h1 {
+  color: #292E47;
+  font-size: 1.5em;
+
+  line-height: 68px;
+  margin-top: 20px;
+}
+
+.paragrahpX {
+  color: #6a6a72;
+  font-weight: 10;
+}
+
+.boxInfoProjects {
+  margin-left: 0%;
+}
+
+.projectSectionHeader {
+width: 100%;
+}
+
+.styleImgHeader {
+  width: 100%;
+  height: 150px;
+}
+
+/*--------*/
 .projectSection {
   margin-top: 70px;
 }
+
+
 
 .projectSection h2 {
   color: #353030;
@@ -383,6 +429,8 @@ a {
 /* CTA SECTION    ini -- mobile -- */
 
 .ctaSection {
+  margin-left: -25px;
+  margin-right: -25px;
   margin-top: 100px;
 }
 
@@ -484,6 +532,7 @@ a {
   color: #6b708d;
   font-size: 1em;
   line-height: 24px;
+  font-style: normal;
 }
 
 .footerLinks {
@@ -509,6 +558,115 @@ a {
 }
 
 /* FOOTER SECTION    end -- mobile -- */
+/* -----------------------------*/
+/* -----------------------------*/
+/* FORM HTML SECTION    ini -- mobile -- */
+
+.contactUsContainer {
+  width: 100%;
+}
+
+
+.contactUsSection2 {
+  padding: 0 30px;
+  margin: 80px 0 100px;
+}
+
+.contactUsSection2  h1 {
+  font-size: 1.5em;
+  margin: 50px 0 40px;
+}
+
+.contactForm h1{
+  font-size: 2.5em;
+  margin: 50px 0 40px;
+}
+
+.contactForm {
+  display: grid;
+  max-width: 100%;
+  gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+      "name  "
+      "email "
+      "phone"
+      "message "
+      "btn ";
+}
+
+.name {
+  grid-area: name;
+}
+.email {
+  grid-area: email;
+}
+.phone {
+  grid-area: phone;
+}
+.message {
+  grid-area: message;
+}
+
+.inputWraper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle {
+  margin-bottom: 15px;
+  color: #6b708d;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.contactTextField {
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  border: none;
+  background-color: rgba(107, 112, 141, 0.1);
+}
+
+.contactTextField:focus {
+  outline: none;
+  border: 1px solid #f2f4fc;
+  box-shadow: 0 0 5px #6b708d;
+}
+
+.textAreaField {
+  height: 200px;
+  resize: none;
+  padding-top: 20px;
+}
+
+.textAreaField::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  /* padding-top: 30px; */
+  /* text-indent: 20px; */
+}
+
+.buttonForm {
+  background-color: #072ac8;
+  height: 80px;
+  padding: 15px 30px;
+  font-size: 1.1em;
+  color: #ffffff;
+  cursor: pointer;
+  border: 0;
+  grid-area: btn;
+}
+
+
+
+
+
+
+
+
+/* FORM HTML SECTION    end -- mobile -- */
+/* -----------------------------*/
 /* -----------------------------*/
 /*---------------------*/
 /* --- media query --- */
@@ -701,6 +859,29 @@ a {
     line-height: 1px;
   }
 
+/****** ******/
+
+.articleDetailsProjects {
+  margin: 0 200px;
+}
+
+.styleImgHeader {
+  align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.styleImgHeader {
+  width: 100%;
+  height: 350px;
+}
+
+.articleDetailsProjects h1{
+  font-size: 2em;
+}
+
+
+
   /*      PROJECT SECTION    @ end */
   /*      SERVICES SECTION    @ ini */
 
@@ -715,6 +896,8 @@ a {
   /*      TESTIMONIAL SECTION    @ ini */
 
 .testimonialSection {
+  margin-left: -25px;
+  margin-right: -25px;
   margin-top: 100px;
   position: relative;
 }
@@ -807,14 +990,36 @@ a {
   row-gap: 50px;
  }
 
-
     /*   FOOTER SECTION end   */
+    /*   FORM HTML ini   */
+
+
+
+    .contactUsSection {
+      margin: 100px 0 150px;
+  }
+  
+  .contactUsSection h1 {
+      margin-bottom: 120px;
+      font-size: 3.75em;
+  }
+  
+  .contactForm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          "name  name"
+          "email phone"
+          "message  message"
+          "btn btn";
+  }
 
 
 
 
-
-
+} 
+    /*   FORM HTML end   */
 
 
 }
+
+
